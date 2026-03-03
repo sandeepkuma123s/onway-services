@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account | OnWay Railway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="container header-flex">
+    <div class="brand">
+      <img src="logo.jpg" class="logo">
+      <span class="brand-name">OnWay Railway Services</span>
+    </div>
+  </div>
+</header>
+
+<!-- ANIMATED TRAIN BACKGROUND -->
+<div class="train-track">
+  <div class="train" style="border-bottom:5px solid rgb(178, 15, 232); display:inline-block; color: blue;">
+ONWAY-SERVICES FLATFORM
+
+</div>
+</div>
+
+<section class="signup-section">
+  <div class="signup-card">
+
+    <h2>Create Your Account</h2>
+    <p class="signup-subtitle">Secure Railway Registration Portal</p>
+
+    <form id="signupForm">
+
+      <div class="input-group">
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Create Password" required>
+        <div class="strength-meter">
+          <div id="strengthBar"></div>
+        </div>
+        <small id="strengthText"></small>
+      </div>
+
+      <button type="button" class="otp-btn" onclick="showOTP()">Send OTP</button>
+
+      <div id="otpSection" class="otp-section">
+        <input type="text" placeholder="Enter OTP">
+      </div>
+
+      <button type="submit" class="signup-btn">Register Now</button>
+
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="disclaimer">
+    OnWayRailway.com is an independent railway travel assistance platform and not affiliated with Indian Railways or IRCTC.
+  </p>
+  <p>© 2026 OnWay Railway Services</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
